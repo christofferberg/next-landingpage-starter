@@ -1,0 +1,24 @@
+@import '@radix-ui/colors/blackA.css';
+@import '@radix-ui/colors/whiteA.css';
+
+@import '@radix-ui/colors/slate.css';
+@import '@radix-ui/colors/slateA.css';
+
+@import '@radix-ui/colors/crimson.css';
+@import '@radix-ui/colors/crimsonDark.css';
+
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/greenDark.css';
+
+@import '@radix-ui/colors/indigo.css';
+@import '@radix-ui/colors/indigoDark.css';
+
+@import '@radix-ui/colors/violet.css';
+@import '@radix-ui/colors/violetDark.css';
+
+@layer base {
+  :root {
+    --font-sans: Poppins, -apple-system, system-ui, BlinkMacSystemFont,
+      'Helvetica Neue', 'Helvetica', sans-serif;
+  }
+}

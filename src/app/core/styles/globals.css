@@ -1,0 +1,36 @@
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components.css';
+@import 'tailwindcss/utilities.css';
+
+@import 'variables.css';
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  touch-action: manipulation;
+}
+
+html,
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--slate2);
+  color: var(--slate12);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
