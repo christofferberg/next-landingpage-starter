@@ -3,7 +3,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import type { Variants } from 'framer-motion'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FunctionComponent, useEffect } from 'react'
+import { ReactNode, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useToggle } from 'react-use'
 
@@ -70,9 +70,12 @@ const menuItemVariants: Variants = {
   },
 }
 
-const MotionIcon: FunctionComponent<{ label: string }> = ({
+const MotionIcon = ({
   children,
   label,
+}: {
+  children: ReactNode
+  label: string
 }) => {
   return (
     <motion.div
