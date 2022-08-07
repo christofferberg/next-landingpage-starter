@@ -1,5 +1,16 @@
 {
+  "singleQuote": true,
   "semi": false,
   "arrowParens": "always",
-  "singleQuote": true
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderGroupNamespaceSpecifiers": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@(services|features|app)/(.*)$",
+    "^@(config|graphql|hooks|lib|pages|query|styles|utils)/(.*)$",
+    "^@(components)/(.*)$",
+    "^@/(.*)$",
+    "^[./]"
+  ]
 }

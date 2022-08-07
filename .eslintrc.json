@@ -1,6 +1,21 @@
 {
-  "extends": "next/core-web-vitals",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ],
   "rules": {
-    "react/jsx-curly-brace-presence": [1, "never"]
+    "unicorn/prefer-module": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react/jsx-curly-brace-presence": [
+      2,
+      { "props": "always", "children": "never", "propElementValues": "always" }
+    ]
   }
 }
